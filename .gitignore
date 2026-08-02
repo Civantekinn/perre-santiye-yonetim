@@ -1,0 +1,49 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/yedek-servisi/node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.env*.local
+.env
+yedek-servisi/ayarlar.json
+yedek-servisi/*.xlsx
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+.env*
+!.env.example
+!.env.local.example
+!yedek-servisi/.env.example
+serviceAccountKey.json
+yedek-servisi/yedek.lock
+yedek-servisi/yedek.log
+yedek-servisi/*.xlsx
+yedek-servisi/*.log
+deploy-out*.txt
+deploy-result.txt
+scripts/wipe_b64.txt
+scripts/test-create-user*.js
+scripts/*_expr.txt
+.cursor/

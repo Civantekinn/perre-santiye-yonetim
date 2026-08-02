@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f0f3ef;
+  --bg-deep: #e2e8df;
+  --surface: #ffffff;
+  --ink: #1a241a;
+  --muted: #5a6b5a;
+  --accent: #426142;
+  --accent-soft: #e4ebe4;
+  --danger: #b91c1c;
+  --danger-soft: #fef2f2;
+  --warn: #b45309;
+  --line: #d4ddd4;
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #d5e0d5 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, #dce6dc 0%, transparent 45%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+@layer components {
+  .kart {
+    @apply rounded-2xl border border-[var(--line)] bg-white/90 shadow-sm backdrop-blur-sm;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-perre-700 text-white hover:bg-perre-800;
+  }
+  .btn-secondary {
+    @apply btn border border-[var(--line)] bg-white text-[var(--ink)] hover:bg-perre-50;
+  }
+  .btn-danger {
+    @apply btn bg-red-700 text-white hover:bg-red-800;
+  }
+  .input {
+    @apply w-full rounded-xl border border-[var(--line)] bg-white px-3 py-2.5 text-sm outline-none ring-perre-500 focus:ring-2;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-[var(--muted)];
+  }
+}

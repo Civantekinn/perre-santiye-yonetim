@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tekinler Mühendislik — Company Profile</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+
+  :root {
+    --ink: #14181d;
+    --muted: #5b646e;
+    --line: #d4d9de;
+    --accent: #1f3a5f;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #eceef1;
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    width: 210mm;
+    height: 297mm;
+    margin: 18px auto;
+    padding: 20mm;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0,0,0,.14);
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6mm;
+  }
+
+  .company {
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: .4px;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  .tagline {
+    margin: 3mm 0 0;
+    font-size: 11pt;
+  }
+
+  .affiliation {
+    margin: 1.5mm 0 0;
+    font-size: 9pt;
+    color: var(--muted);
+  }
+
+  section { margin-top: 10mm; }
+
+  h2 {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: var(--accent);
+    margin: 0 0 4mm;
+    padding-bottom: 2mm;
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+  }
+
+  p { margin: 0 0 3mm; }
+  p:last-child { margin-bottom: 0; }
+
+  .cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9mm;
+  }
+
+  .block-title {
+    font-size: 10pt;
+    font-weight: 700;
+    margin: 0 0 2.5mm;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 4.6mm;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 2mm;
+    color: var(--muted);
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: -3.8mm;
+    top: 1.9mm;
+    width: 1.5mm;
+    height: 1.5mm;
+    background: var(--accent);
+  }
+
+  .statement {
+    background: #f5f7f9;
+    border-left: 2.5px solid var(--accent);
+    padding: 5mm 6mm;
+  }
+
+  footer {
+    margin-top: auto;
+    padding-top: 6mm;
+    border-top: 2px solid var(--accent);
+    font-size: 9.5pt;
+  }
+
+  .contact {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .contact span { color: var(--line); margin: 0 2.5mm; font-weight: 400; }
+
+  .stamp {
+    margin: 2mm 0 0;
+    font-size: 8pt;
+    color: var(--muted);
+  }
+
+  @media print {
+    body { background: #fff; }
+    .sheet { margin: 0; width: auto; height: auto; padding: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <h1 class="company">TEKİNLER MÜHENDİSLİK</h1>
+    <p class="tagline">Electrical Contracting &amp; Solar Energy Solutions</p>
+    <p class="affiliation">Engineering and consultancy division under Perre · Türkiye and international projects</p>
+  </header>
+
+  <section>
+    <h2>Who We Are</h2>
+    <p>Tekinler Mühendislik is an engineering and contracting company specialised in electrical installation works and solar energy systems. We deliver projects from design and engineering through installation, testing and commissioning, under a single point of responsibility and in line with international standards.</p>
+  </section>
+
+  <section>
+    <h2>Fields of Activity</h2>
+    <div class="cols-3">
+      <div>
+        <p class="block-title">Electrical Contracting</p>
+        <ul>
+          <li>Medium and low voltage installations</li>
+          <li>Transformer substations and panels</li>
+          <li>Cable systems and earthing</li>
+          <li>Lighting, generators and UPS</li>
+        </ul>
+      </div>
+      <div>
+        <p class="block-title">Solar Energy — EPC</p>
+        <ul>
+          <li>Rooftop and ground-mounted PV plants</li>
+          <li>Grid-connected and hybrid systems</li>
+          <li>Battery storage</li>
+          <li>Grid connection and commissioning</li>
+        </ul>
+      </div>
+      <div>
+        <p class="block-title">Engineering</p>
+        <ul>
+          <li>Design and technical documentation</li>
+          <li>Permits and approvals</li>
+          <li>Project management and supervision</li>
+          <li>Operation and maintenance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Entry Into the Montenegro Market</h2>
+    <div class="statement">
+      <p>This sheet describes the work we carry out, for your review. If you consider that our fields of activity connect with your own, we would like to enter the Montenegro market through your organisation.</p>
+      <p>Our immediate plan is to submit an application for <strong>electrical works</strong>, and we are ready to provide all documentation required for registration and qualification in this scope. In the future, we intend to extend the same cooperation to our other fields of activity, in particular solar energy.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="contact">info@tekinlermuhendislik.com<span>|</span>www.tekinlermuhendislik.com<span>|</span>[+90 ... ]</p>
+    <p class="stamp">Tekinler Mühendislik · Company Profile</p>
+  </footer>
+
+</div>
+</body>
+</html>
